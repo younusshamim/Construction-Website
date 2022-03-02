@@ -1,0 +1,531 @@
+/* ====================
+    Typhography 
+=======================*/
+h1,h2,h3{
+    font-family: 'Patrick Hand', cursive;
+}
+h2.sectionHeading{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    margin-bottom:50px;
+}
+h2.sectionHeading::after{
+    content: "";
+    height: 2px;
+    width: 300px;
+    display: block;
+    margin: 5px auto;
+    background: -moz-linear-gradient(left,rgba(0,0,0,0), black, rgba(0,0,0,0));
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0), black, rgba(0,0,0,0));
+    background: -o-linear-gradient(left,rgba(0,0,0,0), black, rgba(0,0,0,0));
+    background: -ms-linear-gradient(left,rgba(0,0,0,0), black, rgba(0,0,0,0));
+}
+h2.sectionHeading span{
+    color:#FF5000;
+}
+
+
+
+/* ====================
+header-section css start  
+=======================*/
+#header-section{
+    /* background:url(../); */
+    width: 100%; height: 620px;
+    background-size: cover;
+    background-attachment: fixed;
+    /* clip-path: polygon(100% 0, 100% 70%, 0% 100%, 0 100%, 0 0); */
+}
+.navbar{
+    background: transparent!important;
+}
+.navbar-light .navbar-nav a.nav-link {
+    text-transform: uppercase;
+    color:white;
+    margin-left:10px;
+}
+.navbar-light .navbar-nav a.nav-link:focus{
+    color:white;
+}
+.navbar-light .navbar-nav a.nav-link:hover{
+    color:#FF5000;
+    transition: 0.3s;
+}
+.navbar-light .navbar-nav .active > a.nav-link{
+    color:#FF5000;
+}
+.navbar-light .navbar-toggler {
+    color: rgb(202, 202, 202);
+    border-color: rgb(221, 221, 221);
+}
+.navbar-toggler i{
+    color:rgb(209, 209, 209);
+}
+.navbar-brand img{
+    width:200px;
+    margin-top:10px;
+}
+
+#header-section .headerLeft h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin-top:100px;
+    color:rgb(224, 224, 224);
+}
+#header-section .headerLeft h1 span{
+    color:#FF5000;
+}
+#header-section form {
+    width:70%;
+    background: white;
+    padding:50px 30px 30px 30px;
+    border-radius: 3px;
+    margin:20px 0px 0px 80px;
+    /* box-shadow: 1px 1px 3px 1px #bbb; */
+}
+#header-section form h4{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:20px;
+}
+#header-section form .form-control:focus{
+    box-shadow: none;
+    border:1px solid #ced4da;
+}
+#header-section form button:focus{
+    box-shadow: none;
+}
+#header-section form button{
+    background: #FF5000;
+    border:none;
+}
+#header-section form button:hover{
+    background: #b63a00;
+}
+
+
+
+
+
+/* ====================
+services-section css start  
+=======================*/
+#services-section{
+    padding:80px 0px;
+    position: relative;
+}
+#services-section::before{
+    content: "";
+    background-color: #dbdbdb3d;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: -1;
+    transform: skewY(-10deg);
+    -webkit-transform: skewY(-10deg);
+    -moz-transform: skewY(-10deg);
+    -ms-transform: skewY(-10deg);
+    -o-transform: skewY(-10deg);
+}
+#services-section .single-service{
+    margin-bottom:25px;
+}
+#services-section .single-service i{
+    font-size:22px;
+    margin-top:10px;
+    color: #FF5000;
+}
+#services-section .single-service i.no-margin{
+    margin:0px;
+}
+#services-section .single-service h4{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+#services-section .single-service:hover i{
+    color:#b63a00;
+    transition: .3s;
+    transform:rotate(360deg);
+}
+
+
+
+
+/* =======================
+project-section css start
+==========================*/
+#projects-section{
+    padding-bottom:80px;
+}
+#projects-section .single-project{
+    box-shadow: 1px 1px 10px #0000002e;
+    padding:10px;
+    position: relative;
+    transition:0.3s  ;
+    -webkit-transition:0.3s  ;
+    -moz-transition:0.3s  ;
+    -ms-transition:0.3s  ;
+    -o-transition:0.3s  ;
+    margin-bottom:20px;
+}
+#projects-section .single-project img{
+    height: 180px;
+    width: 100%;
+    clip-path: polygon(100% 0px, 100.85% 83.33%, -0.09% 99.44%, 0px 100%, 0px 0px);
+    transition: .4s;
+}
+#projects-section .single-project:hover img{
+    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    transform: scale(.97);
+}
+#projects-section .single-project:hover h4{
+    color:#FF5000;
+}
+#projects-section a{
+    text-decoration: none;
+    color:black;
+}
+#projects-section .single-project h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+#projects-section .single-project p{
+}
+#projects-section .single-project span{
+    display: inine-block;
+    background-color: #FF5000;
+    color:white;
+    padding:2px 5px;
+    border-radius:2px;
+    text-align:center;
+    font-size: 14px;
+}
+#projects-section .all-projects{
+    height: 290px;
+}
+#projects-section .all-projects p{
+    font-size:18px;
+    font-weight: 600;
+    margin-top:20px;
+}
+#projects-section .all-projects:hover p{
+    color:#FF5000;
+}
+
+
+
+
+/* =======================
+experience-section css start
+==========================*/
+#experience-section{
+    padding-bottom:50px;
+    position: relative;
+}
+#experience-section::before{
+    content: "";
+    background-color: #c6c6c63d;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+}
+#experience-section .workingExperience h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#experience-section .workingExperience h1 span{
+    color:#FF5000;
+}
+#experience-section .certified h3{
+    text-transform: uppercase;
+    font-size:23px;
+}
+#experience-section .certified img{
+    margin-top:20px;
+}
+
+
+
+
+/* =======================
+fun-section css start
+==========================*/
+#fun-section {
+    padding-bottom:80px;
+}
+#fun-section .fun-item h1{
+    float:left;
+    font-size:60px;
+    font-weight: bold;
+    color:#FF5000;
+}
+#fun-section .fun-item h4{
+    float:left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin:18px 0px 0px 10px;
+}
+
+
+
+
+/* =======================
+footer-section css start
+==========================*/
+#footer-section{
+    background-color: #16252c;
+    padding-top:30px;
+    color:#d6d6d6 !important;
+}
+#footer-section .single-footer{
+    margin-bottom:30px;
+}
+#footer-section .foot-one .logo{
+    width:250px;
+    margin-bottom: 15px;
+}
+#footer-section .foot-two h3{
+    margin-left:70px;
+    font-size:25px;
+    text-transform: uppercase;
+}
+#footer-section .foot-two ul li{
+    margin-bottom:8px;
+    margin-left:70px;
+}
+#footer-section .foot-two ul li a{
+   color:white;
+}
+#footer-section .foot-three h3{
+    text-transform: uppercase;
+    font-size:25px;
+}
+#footer-section .foot-three p{
+    margin-left:25px;
+}
+
+.footer-bottom{
+    background-color: #111f25;
+}
+.footer-bottom p{
+    color:#d6d6d6;
+    margin-top:7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================
+css for another page
+==========================*/
+.navbar-2{
+    background: #111f25!important;
+}
+.display-section{
+    background-color: #b63a00;
+    padding: 60px 0px;
+}
+.display-section h1{
+    text-transform: uppercase;
+    color:white;
+    text-align: center;
+}
+#breadcrumb{
+    background-color: white;
+}
+.breadcrumb{
+    background-color: white;
+    margin:0;padding:0;
+    margin-top:15px;
+}
+.breadcrumb a{
+    color:black;
+}
+.breadcrumb a:hover{
+    color:#FF5000;
+    text-decoration: none;
+}
+#footer-section .single-footer h3{
+    color:white;
+}
+
+
+
+
+/* =======================
+contact page css start
+==========================*/
+#contact-page{
+    padding:80px 0px;
+}
+#contact-page h4{
+    font-weight: 600;
+    margin-bottom:25px;
+}
+#contact-page input[type="text"],
+#contact-page input[type="email"]{
+    height: 45px;
+}
+#contact-page textarea{
+    height:150px;
+}
+#contact-page input:focus,
+#contact-page textarea:focus{
+    box-shadow: none;
+    border:1px solid #ced4da;
+}
+#contact-page button{
+    background-color: #FF5000;
+    border:none;
+    color:white;
+    width:180px;
+    height:45px;
+}
+#contact-page button:focus{
+    box-shadow: none;
+}
+#contact-page button:hover{
+    background-color: #b63a00;
+}
+
+
+
+/* =======================
+about page css start
+==========================*/
+#about-page{
+    padding:80px 0px;
+}
+
+
+/* =======================
+services page css start
+==========================*/
+#services-page{
+
+}
+
+
+/* =======================
+project page css start
+==========================*/
+#projects-page{
+    padding-top:80px;
+}
+#projects-page .mainH{
+    font-weight: 600;
+    margin-bottom:20px;
+    text-transform: uppercase;
+}
+#projects-page .category{
+    margin-bottom:25px;
+}
+#projects-page .category .btn{
+    font-weight: 600;
+    font-size:15px;
+    padding:0px 2px;
+    background-color: rgb(235, 235, 235);
+    margin:1px;
+}
+#projects-page .category .btn:focus{
+    color:white;
+    box-shadow: none;
+}
+#projects-page .get-quote{
+    background: rgb(231, 231, 231);
+    padding:30px 0px;
+}
+#projects-page .get-quote h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+#projects-page .get-quote .btn{
+    background: #FF5000;
+    color:white;
+    text-transform: uppercase;
+}
+#projects-page .get-quote .btn:focus{
+    box-shadow: none;
+}
+.mixitup-control-active{
+    background-color: #FF5000!important;
+    color:white;
+}
+.mixitup-control-active:hover{
+    color:white;
+}
+
+
+
+
+/* =======================
+project details css start
+==========================*/
+#projects-details{
+    padding:80px 0px;
+}
+#projects-details h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+#projects-details p{
+    margin:0;
+}
+#projects-details p span{
+    font-weight: 600;
+}
+#projects-details img{
+    margin-bottom:20px;
+}
+#projects-details .projectStep h4{
+    font-size: 22px;
+}
+#projects-details .projectStep h4::after{
+    content: "";
+    height: 3px;
+    width: 15px;
+    display: block;
+    background:#FF5000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+.uk-lightbox-caption{
+    font-weight: 600;
+    font-size: 25px;
+    background:blue;
+    background-color: #ffeae0;
+    color:black;
+    bottom:50px;
+    margin:0;padding:0;
+    height: 40px;
+}
